@@ -1,7 +1,7 @@
 Package: SlidesDatactivist
 Type: Package
 Title: Templates de slides pour Datactivist
-Version: 0.6.3
+Version: 0.6.4
 Authors@R: c(
     person("Gombin", "Joel", role = "cre", email = "joel@datactivist.coop"),
     person("Yihui", "Xie", role = "aut", email = "xie@yihui.name", comment = c(ORCID = "0000-0003-0645-5666")),
@@ -31,11 +31,13 @@ Imports:
     knitr (>= 1.21),
     servr (>= 0.13),
     xfun (>= 0.6),
-    rmarkdown
-Suggests: rstudioapi, testit
+    rmarkdown,
+    metathis
+Suggests: rstudioapi, testit, countdown
 License: MIT + file LICENSE
 URL: https://github.com/datactivist/slides_datactivist
 BugReports: https://github.com/datactivist/slides_datactivist/issues
 VignetteBuilder: knitr
 Encoding: UTF-8
 RoxygenNote: 6.1.1
+Remotes: gadenbuie/countdown, gadenbuie/countdown

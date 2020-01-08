@@ -20,7 +20,29 @@ output:
 params:
   event: la grosse conférence
   slug: lagrosseconf
+  description: Découvrez ma grosse conférence !
+  title: Mon joli titre de présentation
+  image: https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/logo.png
+  image_alt: le logo de Datactivist
 ---
+
+```{r, echo=FALSE}
+library(metathis)
+meta() %>% 
+  meta_description(params$event) %>% 
+  meta_name("github-repo" = paste0("datactivist/", params$slug)) %>% 
+  meta_viewport() %>% 
+  meta_social(
+    title = params$title,
+    url = paste0("https://datactivist.coop/", params$slug),
+    image = params$image,
+    image_alt = params$image_alt,
+    og_type = "website",
+    og_author = "Datactivist",
+    twitter_card_type = "summary",
+    twitter_creator = "@datactivi_st")
+
+```
 
 layout: true
 
@@ -46,7 +68,7 @@ layout: true
 </style>
 
 
-`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><a href="https://datactivist.coop/"><img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'></a></div></center></span></div>")` 
+`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><a href='https://datactivist.coop/'><img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'></a></div></center></span></div>")` 
 
 
 ---
@@ -179,6 +201,26 @@ Tiers de confiance
 ## Positionner une image
 
 ![:abs 30%, 20%, 65%](https://datactivist.coop/images/sticker-3.png)
+
+---
+## Et même un compteur !
+
+(pratique pour les ateliers)
+
+(pour en savoir plus : https://pkg.garrickadenbuie.com/countdown/)
+
+```{r}
+library(countdown)
+countdown(minutes = 1, seconds = 00, 
+          play_sound = TRUE,
+            # Set timer theme to match solarized colors
+          color_border              = solarized$magenta,
+          color_text                = solarized$magenta,
+          color_running_background  = solarized$cyan,
+          color_running_text        = solarized$base02,
+          color_finished_background = solarized$red,
+          color_finished_text       = solarized$base3)
+```
 
 ---
 class: inverse, center, middle
