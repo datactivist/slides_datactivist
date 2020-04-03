@@ -213,8 +213,10 @@ Tiers de confiance
 
 ```{r}
 library(countdown)
+solarized <- xaringanthemer:::solarized
 countdown(minutes = 1, seconds = 00, 
           play_sound = TRUE,
+          
             # Set timer theme to match solarized colors
           color_border              = solarized$magenta,
           color_text                = solarized$magenta,
