@@ -40,4 +40,4 @@ BugReports: https://github.com/datactivist/slides_datactivist/issues
 VignetteBuilder: knitr
 Encoding: UTF-8
 RoxygenNote: 6.1.1
-Remotes: gadenbuie/countdown, gadenbuie/countdown
+Remotes: gadenbuie/countdown, gadenbuie/xaringanthemer

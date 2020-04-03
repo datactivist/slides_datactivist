@@ -40,7 +40,7 @@ meta() %>%
     og_type = "website",
     og_author = "Datactivist",
     og_locale = "fr_FR",
-    og_site_name = "Datactivist"
+    og_site_name = "Datactivist",
     twitter_card_type = "summary",
     twitter_creator = "@datactivi_st")
 
