@@ -12,7 +12,7 @@ An R package for creating slideshows with [remark.js](http://remarkjs.com) throu
 Please see the full documentation as a [presentation here](http://slides.yihui.name/xaringan/) ([中文版在此](http://slides.yihui.name/xaringan/zh-CN.html)). The [remark.js](http://remarkjs.com) website provides a quick introduction to the underlying syntax upon which **xaringan** builds. If you prefer reading a book, **xaringan** is also documented in [the R Markdown book (Chapter 7)](https://bookdown.org/yihui/rmarkdown/xaringan.html). You can use **remotes** to install the package:
 
 ```r
-remotes::install_github('yihui/xaringan')
+remotes::install_github('datactivist/slides_datactivist')
 ```
 
 If you use RStudio, it is easy to get started from the menu `File -> New File -> R Markdown -> From Template -> Ninja Presentation`, and you will see an R Markdown example. Press the `Knit` button to compile it, or use the RStudio Addin `Infinite Moon Reader` to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded; make sure the Rmd document is on focus when you click the addin). Please see the [issue #2](https://github.com/yihui/xaringan/issues/2) if you do not see the template or addin in RStudio.
