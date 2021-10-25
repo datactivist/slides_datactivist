@@ -17,6 +17,7 @@ output:
           <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
           </div>
         </div>
+    anchor_sections: false
 params:
   event: la grosse conférence
   slug: lagrosseconf

@@ -72,6 +72,7 @@
 moon_reader = function(
   css = c('default', 'default-fonts'), self_contained = FALSE, seal = TRUE, yolo = FALSE,
   chakra = 'https://remarkjs.com/downloads/remark-latest.min.js', nature = list(),
+  anchor_sections = FALSE,
   ...
 ) {
   theme = grep('[.]css$', css, value = TRUE, invert = TRUE)
@@ -186,7 +187,8 @@ moon_reader = function(
     },
     base_format = html_document2(
       css = css, self_contained = self_contained, theme = NULL, highlight = NULL,
-      extra_dependencies = deps, template = pkg_resource('default.html'), ...
+      extra_dependencies = deps, template = pkg_resource('default.html'), 
+      anchor_sections = anchor_sections,...
     )
   )
 }
