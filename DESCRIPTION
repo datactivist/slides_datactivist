@@ -31,13 +31,12 @@ Imports:
     knitr (>= 1.21),
     servr (>= 0.13),
     xfun (>= 0.6),
-    rmarkdown,
-    metathis
-Suggests: rstudioapi, testit, countdown
+    rmarkdown
+Suggests: rstudioapi, testit, countdown, metathis
 License: MIT + file LICENSE
 URL: https://github.com/datactivist/slides_datactivist
 BugReports: https://github.com/datactivist/slides_datactivist/issues
 VignetteBuilder: knitr
 Encoding: UTF-8
 RoxygenNote: 7.1.1
-Remotes: gadenbuie/countdown, gadenbuie/xaringanthemer
+Remotes: gadenbuie/countdown

@@ -214,17 +214,16 @@ Tiers de confiance
 
 ```{r}
 library(countdown)
-solarized <- xaringanthemer:::solarized
 countdown(minutes = 1, seconds = 00, 
           play_sound = TRUE,
           
-            # Set timer theme to match solarized colors
-          color_border              = solarized$magenta,
-          color_text                = solarized$magenta,
-          color_running_background  = solarized$cyan,
-          color_running_text        = solarized$base02,
-          color_finished_background = solarized$red,
-          color_finished_text       = solarized$base3)
+            # Set timer theme to match "#d33682", # colors
+          color_border              = "#d33682", #$magenta,
+          color_text                = "#d33682", #$magenta,
+          color_running_background  = "#d33682", #$cyan,
+          color_running_text        = "#d33682", #$base02,
+          color_finished_background = "#d33682", #$red,
+          color_finished_text       = "#d33682", #$base3)
 ```
 
 ---

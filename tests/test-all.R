@@ -1,2 +1,2 @@
 library(testit)
-test_pkg('xaringan')
+test_pkg('SlidesDatactivist')
