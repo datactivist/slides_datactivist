@@ -223,7 +223,8 @@ countdown(minutes = 1, seconds = 00,
           color_running_background  = "#d33682", #$cyan,
           color_running_text        = "#d33682", #$base02,
           color_finished_background = "#d33682", #$red,
-          color_finished_text       = "#d33682" #$base3)
+          color_finished_text       = "#d33682" #$base3
+            )
 ```
 
 ---
